@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fce9fa2c0fd974ed48f1e607d33c1420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingNodeGridPosition: {x: 1, y: 0, z: 3}
+  startingNodeGridPosition: {x: 1, y: 0, z: 1}
   goalNodeGridPosition: {x: 4, y: 0, z: 4}
 --- !u!4 &591208470
 Transform:

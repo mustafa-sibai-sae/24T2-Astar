@@ -5,6 +5,7 @@ using TMPro;
 
 public class Node
 {
+    public Node parent;
     public GameObject NodeGameObject { get; private set; }
 
     bool isWalkable;
