@@ -152,8 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fce9fa2c0fd974ed48f1e607d33c1420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingNodeGridPosition: {x: 1, y: 0, z: 1}
-  goalNodeGridPosition: {x: 4, y: 0, z: 4}
+  startingNodeGridPosition: {x: 9, y: 0, z: 0}
+  goalNodeGridPosition: {x: 6, y: 0, z: 11}
 --- !u!4 &591208470
 Transform:
   m_ObjectHideFlags: 0
@@ -398,10 +398,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodePrefab: {fileID: 2423903132737688568, guid: f2655d021f79944baa36f03658c65e88, type: 3}
-  gridNodeCountX: 5
-  gridNodeCountZ: 5
-  NodeWidth: 3
-  NodeHeight: 3
+  gridNodeCountX: 50
+  gridNodeCountZ: 50
+  NodeWidth: 1
+  NodeHeight: 1
 --- !u!4 &898506466
 Transform:
   m_ObjectHideFlags: 0

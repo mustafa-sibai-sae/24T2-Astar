@@ -29,17 +29,22 @@ public class Grid : MonoBehaviour
                 Vector3Int gridPosition = new Vector3Int(x, 0, z);
                 Vector3 worldPosition = new Vector3(x * NodeWidth, 0, z * NodeHeight);
 
-                GameObject go = Instantiate(nodePrefab, worldPosition, Quaternion.identity);
-                go.transform.localScale = new Vector3(NodeWidth, 1, NodeHeight);
+                GameObject go = null;
 
+#if ASTAR_DEBUG
+                go = Instantiate(nodePrefab, worldPosition, Quaternion.identity);
+                go.transform.localScale = new Vector3(NodeWidth, 1, NodeHeight);
+#endif
                 bool isWalkable = !Physics.CheckBox(worldPosition, new Vector3(NodeWidth / 2.0f, 0, NodeHeight / 2.0f));
 
                 nodes[i] = new Node(gridPosition, worldPosition, isWalkable, go);
 
+#if ASTAR_DEBUG
                 if (!nodes[i].IsWalkable)
                 {
                     nodes[i].NodeGameObject.GetComponent<Renderer>().material.color = new Color(0.45f, 0, 0, 1);
                 }
+#endif
             }
         }
     }

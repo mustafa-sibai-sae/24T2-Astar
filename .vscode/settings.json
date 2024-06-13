@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Astar 24T2.sln"
+    "dotnet.defaultSolution": "24T2-Astar.sln"
 }
