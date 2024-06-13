@@ -41,6 +41,8 @@ public class Astar : MonoBehaviour
         {
             startingNode = grid.GetNode(startingNodeGridPosition);
             goalNode = grid.GetNode(goalNodeGridPosition);
+            finalPath.Clear();
+            openList.Clear();
 
             globalVersionNumber++;
 #if ASTAR_DEBUG
@@ -61,6 +63,7 @@ public class Astar : MonoBehaviour
                     currentNode.GCost = 0;
                     currentNode.HCost = 0;
                     currentNode.isVisited = false;
+                    currentNode.parent = null;
                     currentNode.versionNumber = globalVersionNumber;
                 }
 
@@ -123,6 +126,7 @@ public class Astar : MonoBehaviour
                         neighbours[i].GCost = 0;
                         neighbours[i].HCost = 0;
                         neighbours[i].isVisited = false;
+                        neighbours[i].parent = null;
                         neighbours[i].versionNumber = globalVersionNumber;
                     }
 
